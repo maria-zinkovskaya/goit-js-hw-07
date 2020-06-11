@@ -16,4 +16,17 @@ const images = [
   },
 ];
 
-console.log(images);
+const createGallery = images.map(image => {
+  const list = document.createElement('li');
+  list.classList.add('gallery_list');
+
+  const photo = document.createElement('img');
+  photo.classList.add('gallery_image');
+  photo.src = image.url;
+  photo.alt = image.alt;
+
+  list.append(photo);
+
+  return list;
+});
+document.querySelector('#gallery').append(...createGallery);

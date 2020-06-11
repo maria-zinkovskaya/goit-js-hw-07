@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.photo-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-right: 2px;
+}
+
+.gallery_image {
+  display: flex;
+  width: 250px;
+  height: 260px;
+  overflow: hidden;
+}
